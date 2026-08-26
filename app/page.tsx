@@ -9,6 +9,7 @@ type Student = {
   nis: string;
   nama: string;
   kelas: string;
+  alamat: string;
 };
 
 export default function Home() {
@@ -93,6 +94,8 @@ export default function Home() {
 
                   <th className="p-4 text-left">Kelas</th>
 
+                  <th className="p-4 text-left">Alamat</th>
+
                   <th className="p-4 text-center">Aksi</th>
                 </tr>
               </thead>
@@ -105,6 +108,8 @@ export default function Home() {
                     <td className="p-4">{student.nama}</td>
 
                     <td className="p-4">{student.kelas}</td>
+
+                    <td className="p-4">{student.alamat}</td>
 
                     <td className="p-4">
                       <div className="flex justify-center gap-2">
